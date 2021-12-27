@@ -5,3 +5,6 @@ from .models import Project
 def home(requests):
     projects=Project.objects.all()
     return render(requests, 'home.html', {'projects' : projects})
+
+def about(requests):
+    return render(requests, 'about.html')
